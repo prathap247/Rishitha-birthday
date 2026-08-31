@@ -240,13 +240,13 @@
   <div class="lines-title script">a few things, Ammu</div>
   <div class="lines-sub script">that I don't say enough</div>
   <ul class="lines-list">
-    <li>I love how you fight sleep just to keep talking to me a little longer.</li>
+    <li>I love that your eyes light up the second you spot a plane in the sky.</li>
     <li>I love that you remember the small things I mention only once.</li>
     <li>I love your laugh when you're trying so hard not to laugh.</li>
     <li>I love that our arguments always end in "okay, but I still love you."</li>
     <li>I love how safe your hand feels in mine, every single time.</li>
     <li>I love that you make me want to be a better version of myself.</li>
-    <li>I love your voice first thing in the morning, half asleep and all.</li>
+    <li>I love that Tuesdays somehow feel special to you, and now they feel special to me too.</li>
     <li>I love that three months already feels like it's not nearly enough.</li>
     <li>I love us — messy schedules, long calls, and everything in between.</li>
     <li>I love that every "good morning" from you still makes my whole day.</li>
@@ -254,7 +254,7 @@
 
   <div class="closing">
     <p>Here's to the fourth month, the fortieth, and every single one after that. I love you more today than yesterday, Ammu — and that's exactly the plan.</p>
-    <div class="signature script">— your Jaise 💛</div>
+    <div class="signature script">— your Prathap 💛</div>
   </div>
 </section>
 
@@ -307,7 +307,8 @@
     document.getElementById('cd-secs').textContent = String(s).padStart(2,'0');
   }
   let timer;
-  if (new Date() >= target){
+  const isPreview = new URLSearchParams(window.location.search).has('preview');
+  if (isPreview || new Date() >= target){
     showScreen(activityScreen);
   } else {
     tick();
